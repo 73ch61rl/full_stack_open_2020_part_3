@@ -1,0 +1,23 @@
+{
+  "name": "phonebook_backend",
+  "version": "1.0.0",
+  "description": "Repository for the exercises of part 3 of Full Stack Open 2020 course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/73ch61rl/full_stack_open_2020_part_3.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Irina Koski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/73ch61rl/full_stack_open_2020_part_3/issues"
+  },
+  "homepage": "https://github.com/73ch61rl/full_stack_open_2020_part_3#readme"
+}
