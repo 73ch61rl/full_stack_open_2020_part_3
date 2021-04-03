@@ -4,6 +4,8 @@
   "description": "Repository for the exercises of part 3 of Full Stack Open 2020 course.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,12 +14,21 @@
   },
   "keywords": [
     "node",
-    "express"
+    "express",
+    "nodemon",
+    "rest",
+    "api"
   ],
   "author": "Irina Koski",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/73ch61rl/full_stack_open_2020_part_3/issues"
   },
-  "homepage": "https://github.com/73ch61rl/full_stack_open_2020_part_3#readme"
+  "homepage": "https://github.com/73ch61rl/full_stack_open_2020_part_3#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
