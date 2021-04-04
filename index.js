@@ -51,6 +51,26 @@ app.delete('/api/persons/:id', (request, response) => {
     response.status(204).end()
 })
 
+const generatePersonId = () => {
+    return Math.floor(Math.random() * 100000000);
+}
+
+app.post('/api/persons', (request, response) => {
+    const body = request.body
+    if (!body.name) {
+        return response.status(400).json({
+            error: 'The request cannot be fulfilled due to bad syntax.'
+        })
+    }
+    const person = {
+        id: generatePersonId(),
+        name: body.name,
+        number: body.number,
+    }
+    persons = persons.concat(person)
+    response.json(person)
+})
+
 const PORT = 3001
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)

@@ -1,3 +1,10 @@
 GET http://localhost:3001/api/persons
 ###
-DELETE http://localhost:3001/api/persons/4
+DELETE http://localhost:3001/api/persons/36162937
+###
+POST http://localhost:3001/api/persons/ HTTP/1.1
+content-type: application/json
+{
+    "name": "Irina Koski",
+    "number": "0458718888"
+}
